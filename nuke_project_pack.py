@@ -157,7 +157,6 @@ class Nuke_project_pack():
 
     def run_pack(self):
         # 获取打包路径，开新线程运行
-        print "in run"
         self.dst_dir = self.widget.pack_to_path.text()
         if self.dst_dir == "":
             nuke.message("你需要设置打包的路径")
